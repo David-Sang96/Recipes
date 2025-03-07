@@ -1,7 +1,7 @@
 const AboutPage = () => {
   return (
     <article className="grid grid-cols-2 gap-6">
-      <div className="">
+      <div>
         <img
           src="https://static.vecteezy.com/system/resources/thumbnails/007/427/751/small_2x/a-group-of-multiracial-professional-happy-chefs-team-staff-in-white-cooking-uniforms-stands-in-a-row-arms-crossed-with-confidence-cheerful-smiles-with-commercial-culinary-jobs-in-restaurant-kitchen-photo.jpg"
           alt="chef group"

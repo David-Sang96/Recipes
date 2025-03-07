@@ -18,11 +18,10 @@ const HomePage = () => {
 export default HomePage;
 
 export const homeLoader = async () => {
-  const response = await fetch("https://dummyjson.com/recipes");
-  if (!response.ok) {
-    throw new Error("Failed to retrieve data");
-  }
-
+  const response = await fetch("https://dummyjson.com/recipes?limit=8");
   const data = await response.json();
+  if (!response.ok) {
+    throw new Error(data.message);
+  }
   return data.recipes;
 };
